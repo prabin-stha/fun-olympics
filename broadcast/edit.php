@@ -26,7 +26,7 @@
 
             if($result->num_rows == 1){
                 $row = $result->fetch_assoc();
-                $modifiedDesc = str_replace("'", "\\'", $row["description"]);
+                $modifiedDesc = str_replace("\\'","'" , $row["description"]);
 
                 $id = $row["id"];
                 $title = $row["title"];

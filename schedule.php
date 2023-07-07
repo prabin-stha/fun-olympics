@@ -174,7 +174,7 @@
                             echo "</div>";
                         }else{
                             // Single Broadcast
-                            if($result = $conn->query($sql)){
+                            if($result = $conn->query($sql)){ 
                                 if($result->num_rows == 1){
                                     $row = $result->fetch_assoc();
                                     $modifiedDesc = str_replace("'", "\\'", $row['description']);
@@ -197,8 +197,6 @@
                                     echo '<img width="65%" height="350px" style="object-fit:cover;object-position:50% 50%; border-radius: 12px;" src="'. $row['thumbnail'] .'" alt="hero image"/>';
                                     echo "<div style='display: flex; flex-direction: column; align-items: center; gap: 12px;'>";
                                     echo "<img width='30%' src='./images/achievement.svg' />";
-                                    echo "<p>Winner will be awarded title of</p>";
-                                    echo "<small>.".$row['award']."</small>";
                                     echo "</div>";
                                     echo "</div>";
                                     echo "<h2 style='padding-top: 16px;'>" . $row['title'] ."</h2>";

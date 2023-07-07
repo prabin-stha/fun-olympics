@@ -41,8 +41,8 @@
             <small style="font-size: 10px;">BROADCASTS, SCHEDULE & RESULTS</small>
             </div>
         <p><a style="display: flex; align-items: center; gap:4px;<?php if(activeLinkContains('home')) echo "color: #2c746b; font-weight:bold;" ?>" href="/fun-olympics/home"><iconify-icon icon="fluent:live-20-filled"></iconify-icon>Live Broadcasts</a></p>
-        <p><a style="display: flex; align-items: center; gap:4px;<?php if(activeLinkContains('schedule.php')) echo "color: #2c746b; font-weight:bold;" ?>" href="/fun-olympics/schedule.php"><iconify-icon icon="material-symbols:schedule"></iconify-icon>View Schedule</a></p>
-        <p><a style="display: flex; align-items: center; gap:4px;<?php if(activeLinkContains('results.php')) echo "color: #2c746b; font-weight:bold;" ?>" href="/fun-olympics/results.php"><iconify-icon icon="game-icons:podium-winner"></iconify-icon>View Results</a></p>
+        <p><a style="display: flex; align-items: center; gap:4px;<?php if(activeLinkContains('schedule.php')) echo "color: #2c746b; font-weight:bold;" ?>" href="/fun-olympics/schedule.php"><iconify-icon icon="material-symbols:schedule"></iconify-icon>Schedules</a></p>
+        <p><a style="display: flex; align-items: center; gap:4px;<?php if(activeLinkContains('results.php')) echo "color: #2c746b; font-weight:bold;" ?>" href="/fun-olympics/results.php"><iconify-icon icon="game-icons:podium-winner"></iconify-icon>Results</a></p>
     </section>
 
     <?php

@@ -223,13 +223,11 @@
                                     echo '<div style="font-weight: bold; border: 1px solid rgba(0, 0, 0, 0.2); display: inline-block; padding: 6px 12px; border-radius: 8px; font-size: 10px;padding-top: 4px;">LIVE</div>';
                                     echo '</h1>';
                                     echo "<div style='display:flex;'>";
-                                    echo '<div style="flex: 9; position:relative;height:500px;overflow:hidden;margin-right: 12px;"> <iframe style="width:100%;height:100%;position:absolute;left:0px;top:0px;overflow:hidden" frameborder="0" type="text/html" src="'.$row['url'].'" width="100%" height="100%" allowfullscreen title="Dailymotion Video Player" allow="autoplay"> </iframe> </div>';
+                                    echo '<div style="flex: 9; position:relative;height:500px;overflow:hidden;margin-right: 12px;"> <iframe style="width:100%;height:100%;position:absolute;left:0px;top:0px;overflow:hidden" frameborder="0" type="text/html" src="'.$row['url'].'?autoplay=1" width="100%" height="100%" allowfullscreen title="Dailymotion Video Player" allow="autoplay"> </iframe> </div>';
                                     require './chat.php';
                                     echo "</div>";
                                     echo '<h3 style="padding-top: 16px;">Description</h3>';
                                     echo '<p>' . $row['description'] . '</p>';
-                                    // echo '<h3 style="padding-top: 16px">Status</h3>';
-                                    // echo '<p>' . $row['starts_at'] . ' - ' . $row['ends_at'] . '</p>';
                                     echo '</div>';
                                 }
                             }
